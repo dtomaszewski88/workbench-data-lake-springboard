@@ -19,21 +19,21 @@ with a new name.
 
 ## Notebooks
 
-### _data-lake-introduction.ipynb_
+### _[data-lake-introduction.ipynb](data-lake-introduction.ipynb)_
 
 This Notebook will provide a very simple query that can be run to retrieve data from our Data Lake and show it
 inside the Notebook output.
 
 To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
 
-### _visualising-data-lake-output.ipynb_
+### _[visualising-data-lake-output.ipynb](visualising-data-lake-output.ipynb)_
 
 This Notebook will retrieve AAPL data grouped by feed for the 07th January 2022, and display the output on a very
 simple 2D graph.
 
 To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
 
-### _distributed-data-lake-queries-to-graph.ipynb_
+### _[distributed-data-lake-queries-to-graph.ipynb](distributed-data-lake-queries-to-graph.ipynb)_
 
 This complicated Notebook will invoke Data Lake queries throughout a distributed Dask cluster, and will then
 collect the response and create an example 3D graph.
