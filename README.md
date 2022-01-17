@@ -24,10 +24,14 @@ with a new name.
 This Notebook will provide a very simple query that can be run to retrieve data from our Data Lake and show it
 inside the Notebook output.
 
+To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+
 ### _visualising-data-lake-output.ipynb_
 
 This Notebook will retrieve AAPL data grouped by feed for the 07th January 2022, and display the output on a very
 simple 2D graph.
+
+To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
 
 ### _distributed-data-lake-queries-to-graph.ipynb_
 
@@ -37,6 +41,18 @@ collect the response and create an example 3D graph.
 You will need to create a Dask cluster before you can run this sample; to do so, please follow the short video
 here:
 ![images/provisioning-cluster.gif](/images/provisioning-cluster.gif)
+
+Once the Dask cluster has moved to the provisioning state, update the address of the cluster inside the Notebook; 
+change the following line:
+
+`cluster_client = Client("tcp://10.0.0.44:8786")`
+
+to 
+
+`cluster_client = Client("tcp://<<ip address and port shown inside the Clusters sidebar>>")`
+
+Once you have updated the client to point to the correct Dask cluster, click the "Run All" button in the top toolbar
+to run each of the cells in turn.
 
 ## Support
 
