@@ -54,6 +54,34 @@ to
 Once you have updated the client to point to the correct Dask cluster, click the "Run All" button in the top toolbar
 to run each of the cells in turn.
 
+### _[price-correlation.ipynb](price-correlation.ipynb)_
+
+This Notebook fetches the average price of AAPL and TSLA on a given day, calculates the correlation matrix and plots a chart showing the correlation on that day.
+
+To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+
+### _[multidimensional-chart.ipynb](multidimensional-chart.ipynb)_
+
+This Notebook fetches all AAPL trades on a given day, and plots each trade time, quantity and price on a 3d chart.
+
+To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+
+### _[hourly-price-band.ipynb](hourly-price-band.ipynb)_
+
+This Notebook creates a chart of the min and max prices of AAPL trades for each hour on a given day.
+
+To run this Notebook, simply open it, and click the "Run All" button in the top toolbar.
+
+## Scripts
+
+### _[custom-export.py](custom-export.py)_
+
+This Python script is an example of a job that can be run daily. It fetches the price and timestamp of each trade of AAPL, IBM, TSLA and F of the previous day, sorted by timestamp.
+For each day and each product, it generates a CSV file with the data.
+It can run either in a Dask cluster as a scheduled job, or it can be launched from directly inside the Workbench.
+
+Note that the files will be empty if the market was closed the previous day.
+
 ## Support
 
 For support, please email <support@maystreet.com>. Thank you.
